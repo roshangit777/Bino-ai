@@ -13,7 +13,7 @@ function App() {
     if (current === 15) {
       const timeout = setTimeout(() => {
         setShowText(true);
-      }, 1600);
+      }, 1202600);
 
       return () => clearTimeout(timeout); // cleanup
     }
