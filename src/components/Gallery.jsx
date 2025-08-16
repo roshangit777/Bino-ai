@@ -73,17 +73,14 @@ export default function Gallery({ current, setCurrent, menu }) {
       {images.map((item, index) => (
         <div
           key={index}
-          className={`overflow-hidden absolute z-50 top-[50] left-[50] rounded-2xl shadow-xl transition-all duration-500 ease-in-out ${
-            index === current
-              ? ""
-              : current % 2 === 0
-              ? "slide-left"
-              : "slide-right"
-          }`}
+          className={`md:w-[400px] 2xl:w-[400px] w-[320px] overflow-hidden absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-2xl shadow-xl transition-all duration-500 ease-in-out flex justify-center items-center
+    ${
+      index === current ? "" : current % 2 === 0 ? "slide-left" : "slide-right"
+    }`}
           style={{ zIndex: images.length - index }}
         >
           <img
-            className="z-50 w-[320px] h-auto"
+            className="md:w-[400px] 2xl:w-[400px] w-[320px] h-auto"
             src={item}
             alt={`Slide ${index}`}
           />
@@ -97,10 +94,10 @@ export default function Gallery({ current, setCurrent, menu }) {
             opacity: 1,
           }}
         >
-          <h2 className="font-extrabold 2xl:text-6xl md:text-6xl text-2xl text-[#6a5bff]">
+          <h2 className="font-extrabold 2xl:text-5xl md:text-5xl text-xl text-[#6a5bff]">
             FOR 100+ PROBLEMS
           </h2>
-          <h2 className="font-extrabold 2xl:text-6xl md:text-6xl text-3xl text-[#6a5bff]">
+          <h2 className="font-extrabold 2xl:text-5xl md:text-5xl text-2xl text-[#6a5bff]">
             ONE SOLUTION
           </h2>
         </div>

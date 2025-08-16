@@ -1,9 +1,9 @@
 .slide-left {
-  transform: translateX(-120%) rotate(10deg);
+  transform: translateX(-80%) rotate(50deg);
   opacity: 0;
 }
 
 .slide-right {
-  transform: translateX(120%) rotate(-10deg);
+  transform: translateX(80%) rotate(-50deg);
   opacity: 0;
 }

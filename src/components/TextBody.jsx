@@ -14,18 +14,18 @@ const TextBody = ({ menu }) => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <h1 className="font-semibold text-5xl">
+        <h1 className="font-semibold text-4xl">
           Meet{" "}
-          <span className="font-extrabold text-6xl 2xl:text-7xl text-[#6a5bff]">
+          <span className="font-extrabold text-5xl 2xl:text-6xl text-[#6a5bff]">
             Bino
           </span>{" "}
           <span className="md:visible 2xl:visible">—</span>{" "}
-          <span className="text-4xl sm:self-start">
-            Your <span className="text-4xl font-bold">AI Assistant</span> for
+          <span className="text-3xl sm:self-start">
+            Your <span className="text-3xl font-bold">AI Assistant</span> for
             Everyday Life
           </span>
         </h1>
-        <h2 className="text-2xl 2xl:text-3xl text-wrap">
+        <h2 className="text-xl 2xl:text-2xl text-wrap">
           Find <span className="font-bold">anything</span>,{" "}
           <span className="font-bold">anytime</span> — from{" "}
           <span className="font-bold">food</span> to{" "}
@@ -40,15 +40,15 @@ const TextBody = ({ menu }) => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
       >
-        <h1 className="font-bold text-3xl 2xl:text-4xl  text-[#6a5bff]">
+        <h1 className="font-bold text-xl 2xl:text-2xl  text-[#6a5bff]">
           Try Now
         </h1>
         <a
           href="https://wa.me/919800081110"
           className="px-4 py-3 bg-green-500 rounded-2xl text-white font-semibold text-md hover:bg-green-600 transition-all duration-100 hover:scale-105"
         >
-          <span className="flex items-center gap-1 2xl:text-2xl">
-            <FaWhatsapp className="text-2xl 2xl:text-3xl" />
+          <span className="flex items-center gap-1 2xl:text-xl">
+            <FaWhatsapp className="text-xl 2xl:text-2xl" />
             WhatsApp
           </span>
         </a>
