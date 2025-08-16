@@ -73,7 +73,7 @@ export default function Gallery({ current, setCurrent, menu }) {
       {images.map((item, index) => (
         <div
           key={index}
-          className={`w-[340px] md:w-[400px] 2xl:w-[400px] h-fit overflow-hidden absolute z-50 top-[50] left-[50] rounded-2xl shadow-xl transition-all duration-500 ease-in-out ${
+          className={`overflow-hidden absolute z-50 top-[50] left-[50] rounded-2xl shadow-xl transition-all duration-500 ease-in-out ${
             index === current
               ? ""
               : current % 2 === 0
@@ -82,7 +82,11 @@ export default function Gallery({ current, setCurrent, menu }) {
           }`}
           style={{ zIndex: images.length - index }}
         >
-          <img className="z-50" src={item} alt={`Slide ${index}`} />
+          <img
+            className="z-50 w-[320px] h-auto"
+            src={item}
+            alt={`Slide ${index}`}
+          />
         </div>
       ))}
       {current > 3 && (
