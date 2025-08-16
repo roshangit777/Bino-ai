@@ -66,7 +66,7 @@ export default function Gallery({ current, setCurrent, menu }) {
 
   return (
     <div
-      className={`relative md:w-screen 2xl:w-screen w-[400px] h-screen overflow-y-hidden flex flex-col justify-center items-center overflow-x-hidden ${
+      className={`relative md:w-screen 2xl:w-screen w-[400px] h-screen overflow-y-hidden flex flex-col justify-center items-center overflow-x-hidden mb-10 md:mb-0 2xl:mb-0 ${
         menu ? "blur-sm" : ""
       }`}
     >
