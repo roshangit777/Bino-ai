@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const TextBody = ({ menu }) => {
   return (
     <div
-      className={`md:w-screen 2xl:w-screen h-screen overflow-y-hidden flex flex-col justify-center items-center overflow-x-hidden mb-10 md:mb-0 2xl:mb-0 ${
+      className={`md:w-screen 2xl:w-screen h-screen overflow-y-hidden flex flex-col justify-center items-center overflow-x-hidden mb-20 md:mb-0 2xl:mb-0 ${
         menu ? "blur-sm" : ""
       }`}
     >
