@@ -38,7 +38,7 @@ export default function Gallery({ current, setCurrent, menu }) {
 
         if (next === 5) {
           clearInterval(intervalRef.current);
-          speed = 300;
+          speed = 320;
           intervalRef.current = setInterval(() => {
             setCurrent((p) => {
               if (p < images.length - 1) return p + 1;
